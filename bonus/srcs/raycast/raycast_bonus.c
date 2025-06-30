@@ -6,7 +6,7 @@
 /*   By: fpetit <fpetit@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 17:35:44 by alaualik          #+#    #+#             */
-/*   Updated: 2025/06/28 14:32:55 by fpetit           ###   ########.fr       */
+/*   Updated: 2025/06/30 16:16:27 by alaualik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,15 +77,15 @@ int	get_direction(char side, t_vec *dir)
 	if (side == 'x')
 	{
 		if (dir->xd < 0)
-			return (EAST);
-		else
 			return (WEST);
+		else
+			return (EAST);
 	}
 	else
 	{
 		if (dir->yd < 0)
-			return (SOUTH);
-		else
 			return (NORTH);
+		else
+			return (SOUTH);
 	}
 }
